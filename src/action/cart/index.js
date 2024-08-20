@@ -219,10 +219,7 @@ export const updateCartQtyModel = (reqdata, toast) => {
 export const placeOrder = async (data) => {
   console.log(data, "paymentData");
   return new Promise((resolve, reject) => {
-    return post(
-      "https://m100003384001.demo-hclvoltmx.net/services/vendure2/checkout",
-      data
-    )
+    return post("http://172.210.57.171:8080/services/vendure2/checkout", data)
       .then((res) => {
         resolve(res);
         // getCustomerLoginCart();

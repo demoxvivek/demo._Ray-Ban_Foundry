@@ -44,7 +44,7 @@ export const login = (userData, navigate, toast) => async (dispatch) => {
   dispatch(loginRequest());
   try {
     const response = await axios.post(
-      "https://m100003384001.demo-hclvoltmx.net/services/vendure2/login",
+      "http://172.210.57.171:8080/services/vendure2/login",
       userData
     );
     const user = response.data;

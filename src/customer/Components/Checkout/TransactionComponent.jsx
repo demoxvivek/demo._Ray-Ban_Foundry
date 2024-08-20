@@ -113,7 +113,7 @@ const TransactionComponent = () => {
       console.log(paymentData);
       try {
         placeOrder(paymentData).then((response) => {
-          alert("Payment successfully done");
+          // alert("Payment successfully done");
           dispatch(getCartItems());
           console.log(response);
         });

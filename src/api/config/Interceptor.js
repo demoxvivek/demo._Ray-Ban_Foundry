@@ -4,7 +4,7 @@ import LocalStorageService from "../../storage/LocalStorageService";
 // console.log("process.env.REACT_APP_PUBLIC_URL,", process.env);
 // baseURL: "http://49.206.253.146:1773/",
 const instance = axios.create({
-  baseURL: "https://m100003384001.demo-hclvoltmx.net/services/vendure_apis",
+  baseURL: "http://172.210.57.171:8080/services/vendure_apis",
 });
 const localStorageService = LocalStorageService.getService();
 const userAccessToken = localStorageService.getUserAuthAccessToken();
